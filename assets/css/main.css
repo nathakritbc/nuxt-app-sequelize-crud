@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+@font-face {
+  font-family: "NotoSansThai"; 
+  src: url("../fonts/Noto_Sans_Thai/NotoSansThai-VariableFont_wdth,wght.ttf") format("truetype"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kanit"; 
+  src: url("../fonts/Kanit/Kanit-Regular.ttf") format("truetype"); 
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+* {
+  font-family: 'NotoSansThai', Arial, sans-serif;
+}
+
+/* :root {
+  --font-family: "Kanit";
+} */
+
+/* Override font-family for Thai language */
+/* html[lang="th"] {
+  --font-family: "Kanit";
+} */
