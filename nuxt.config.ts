@@ -2,11 +2,13 @@ import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   app: {
     head: {
       link: [{ rel: "icon", type: "image/png", href: "favicon.png" }],
     },
   },
+
   runtimeConfig: {
     public: {
       // apiBase: "/api",
@@ -14,6 +16,7 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/css/main.css"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -22,9 +25,11 @@ export default defineNuxtConfig({
   },
 
   plugins: ["~/plugins/toastification.ts"],
+
   build: {
     transpile: ["vuetify", "vue-toastification"],
   },
+
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {
@@ -34,6 +39,7 @@ export default defineNuxtConfig({
     },
     //...
   ],
+
   vite: {
     vue: {
       template: {
@@ -41,4 +47,6 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  compatibilityDate: "2024-08-06",
 });

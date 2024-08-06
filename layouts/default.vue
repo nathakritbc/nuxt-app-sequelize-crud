@@ -50,8 +50,9 @@ watchEffect(() => {
         <v-list density="compact" nav class="px-2 mt-1">
           <v-list-item
             prepend-icon="mdi-home-city"
+            to="/about"
             title="หน้าหลัก"
-            value="home"
+            value="about"
           >
             <v-tooltip activator="parent" location="left">หน้าหลัก</v-tooltip>
           </v-list-item>
@@ -59,12 +60,13 @@ watchEffect(() => {
             prepend-icon="mdi-account"
             title="My Account"
             value="account"
+            to="/"
           >
             <v-tooltip activator="parent" location="left">โปรไฟล์</v-tooltip>
           </v-list-item>
           <v-list-item
             prepend-icon="mdi-list-box"
-            @click="$router.push('/products')"
+            to="/products"
             title="Stock"
             value="stock"
           >
